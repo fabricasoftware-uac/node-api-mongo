@@ -6,7 +6,6 @@
 [![Mongoose](https://img.shields.io/badge/Mongoose-7.3.0-red.svg)](https://mongoosejs.com/)
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-> *"Porque algunas relaciones quedan en la memoria, pero las verdaderamente memorables se inmortalizan en una base de datos NoSQL con alta disponibilidad y esquemas enriquecidos."*
 >
 > **node-api-mongo** es una API RESTful desarrollada con **Node.js**, **Express** y **MongoDB** (a través de **Mongoose**), concebida con rigor de ingeniería de software y un ingenioso enfoque nostálgico: operar como bitácora digital para documentar, catalogar y homenajear a aquellas parejas y personas significativas que han dejado una huella indeleble en nuestras vidas. ¿Por qué la base de datos se titula `pasado`? Porque toda experiencia sentimental o académica compone nuestra historia; y ahora, gracias a una arquitectura limpia, goza de persistencia confiable, tipado estricto y marcas temporales automáticas.
 
