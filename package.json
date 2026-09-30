@@ -1,14 +1,14 @@
 {
   "name": "node-api-mongo",
   "version": "1.0.0",
-  "description": "",
+  "description": "El registro nostálgico del 'pasado': API REST con Node.js, Express y MongoDB para documentar relaciones y personas importantes que han dejado huella en nuestras vidas.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Salomon Montilla",
   "license": "ISC",
   "dependencies": {
     "connect-multiparty": "^2.2.0",

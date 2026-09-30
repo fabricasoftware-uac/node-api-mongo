@@ -21,12 +21,34 @@ const controller = {
       .catch(err => res.status(500).send({message: `Internal error-> ${err}`}))
   },
   savePareja: function (req, res) {
-    let pareja = new pareja()
-    const {nombre, edad, mensaje} = req.body
-    if (nombre && edad) {
-      pareja.nombre = nombre
-      pareja.edad = edad
-      pareja.mensaje = null
+    const {
+      nombre,
+      edad,
+      mensaje,
+      apodo,
+      fechaInicio,
+      fechaFin,
+      leccionAprendida,
+      impacto,
+      cancion,
+      lugarFavorito,
+      cualidades
+    } = req.body
+
+    if (nombre && edad !== undefined && edad !== null) {
+      let pareja = new Pareja({
+        nombre,
+        edad,
+        mensaje,
+        apodo,
+        fechaInicio,
+        fechaFin,
+        leccionAprendida,
+        impacto,
+        cancion,
+        lugarFavorito,
+        cualidades
+      })
       
       pareja.save()
         .then(storedpareja => {
@@ -43,7 +65,7 @@ const controller = {
     let parejaId = req.params.id
     let update = req.body
 
-    Pareja.findByIdAndUpdate(parejaId, update, {returnDocument: 'after'})
+    Pareja.findByIdAndUpdate(parejaId, update, { returnDocument: 'after', runValidators: true })
       .then(updatedpareja => {
         if(!updatedpareja) return res.status(404).send({message: "The document does not exist"})
         return res.status(200).send({pareja: updatedpareja})
