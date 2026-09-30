@@ -24,12 +24,6 @@
 
 ---
 
-## 📖 Descripción y Filosofía del Proyecto
-
-El proyecto trasciende el tradicional CRUD académico para plasmar una metáfora de vida mediante el diseño de software. En el estudio de las **Bases de Datos Avanzadas**, un esquema documental no solo almacena primitivas, sino la semántica y vivencias de un dominio real.
-
-En **node-api-mongo**, la colección `parejas` almacena fichas biográficas detalladas de historias y vínculos significativos. Cada documento es capaz de albergar apodos cariñosos, fechas de inicio y culminación de ciclos, bandas sonoras asociadas, lugares predilectos, cualidades recordadas, calificaciones de impacto emocional (escala de 1 a 10) y profundas lecciones de vida aprendidas. Al residir en la base de datos `pasado`, el sistema ofrece una reconciliación informática: recordar, valorar y, cuando sea preciso, cerrar ciclos con la precisión de un `DELETE`.
-
 ### Aspectos técnicos destacados:
 * **Separación de Capas:** Aislamiento modular entre enrutamiento (`routes/`), lógica de controladores (`controllers/`), contratos de datos (`models/`) e inicialización del servidor (`app.js`, `index.js`).
 * **Modelo Enriquecido con Timestamps:** Esquema Mongoose (`ParejaSchema`) con validaciones de tipo, rangos numéricos (`min: 1, max: 10`), valores por defecto y gestión nativa de `createdAt` y `updatedAt`.
