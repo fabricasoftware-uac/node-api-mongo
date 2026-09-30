@@ -1,5 +1,5 @@
 const express = require('express')
-const show_routes = require('./routes/show')
+const show_routes = require('./routes/parejas')
 
 const app = express()
 
@@ -11,6 +11,6 @@ app.use(express.json())
 app.use(express.urlencoded({extended: true}))
 
 // routes
-app.use('/api/shows', show_routes)
+app.use('/api/parejas', show_routes)
 
 module.exports = app
